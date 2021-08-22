@@ -2,6 +2,12 @@ import pickle
 from game import Board, Game
 from mcts_alphaZero import MCTSPlayer
 from policy_value_net_numpy import PolicyValueNetNumpy
+from test import MyApp
+import sys
+import numpy as np
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
+from PyQt5.QtGui import QPixmap, QImage
+from PyQt5.QtCore import Qt
 
 class Human(object):
     def __init__(self):
@@ -32,6 +38,8 @@ class Human(object):
 
 
 def run():
+    app = QApplication(sys.argv)
+    ex = MyApp()
     n = 5
     width, height = 9, 9
     print("이 오목 인공지능은 9x9 환경에서 동작합니다.")
@@ -39,7 +47,7 @@ def run():
     print("현재 가능한 난이도(정책망의 학습 횟수) 목록 : [ 2500, 5000, 7500, 10000, 12500, 15000, 17500, 20000 ]")
     print("난이도를 입력하세요.")
     hard = int(input())
-    model_file = f'./omok_AI/model/policy_9_{hard}.model'    # colab
+    model_file = f'./model/policy_9_{hard}.model'    # colab
     # model_file = f'./model/policy_9_{hard}.model'          # local
     
     print("자신이 선공(흑)인 경우에 0, 후공(백)인 경우에 1을 입력하세요.")
@@ -61,3 +69,4 @@ def run():
 
 if __name__ == '__main__':
     run()
+    sys.exit(app.exec_())

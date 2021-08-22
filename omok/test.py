@@ -76,7 +76,7 @@ class MyApp(QWidget):
         bytesPerLine = 3 * width
         qImg_board = QImage(self.board_cv2.data, width, height, bytesPerLine, QImage.Format_RGB888)
         self.lbl_img.setPixmap(QPixmap(qImg_board))
-        print((x-10)//55,(y-5)//55)
+        print((x-5)//55,(y-5)//55,sep=',')
 
     def game_play(self, board_img, ball, pos_x, pos_y, turn):
         #human
@@ -113,7 +113,6 @@ class MyApp(QWidget):
         return board_img
 
 if __name__ == '__main__':
-
     app = QApplication(sys.argv)
     ex = MyApp()
     sys.exit(app.exec_())
