@@ -15,8 +15,6 @@ class MyApp(QWidget):
 
     def initUI(self):
 
-        load_model_path = 'model/model.ckpt'
-
         # 바둑판 크기
         board_size = 15
         self.game_end = 0
@@ -77,6 +75,12 @@ class MyApp(QWidget):
         qImg_board = QImage(self.board_cv2.data, width, height, bytesPerLine, QImage.Format_RGB888)
         self.lbl_img.setPixmap(QPixmap(qImg_board))
         print((x-5)//55,(y-5)//55,sep=',')
+        a = (x-5)//55
+        b = (y-5)//55
+        string = str(a) + "," + str(b)
+        f = open("log.txt", 'w')
+        f.write(string)
+        f.close()
 
     def game_play(self, board_img, ball, pos_x, pos_y, turn):
         #human

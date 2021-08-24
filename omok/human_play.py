@@ -8,6 +8,7 @@ import numpy as np
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 from PyQt5.QtGui import QPixmap, QImage
 from PyQt5.QtCore import Qt
+import time
 
 class Human(object):
     def __init__(self):
@@ -18,8 +19,16 @@ class Human(object):
 
     def get_action(self, board):
         try:
+            time.sleep(3)
+            f = open("log.txt", 'r')
+            data = f.read()
+            print(data)
+            f.close()
+            data = data.split(',')
+            data = list(map(int, list(data)))
             print("돌을 둘 좌표를 입력하세요.")
             location = input()
+            location = data
             if isinstance(location, str) : location = [int(n, 10) for n in location.split(",")]
             move = board.location_to_move(location)
         except Exception as e : move = -1
@@ -38,8 +47,6 @@ class Human(object):
 
 
 def run():
-    app = QApplication(sys.argv)
-    ex = MyApp()
     n = 5
     width, height = 9, 9
     print("이 오목 인공지능은 9x9 환경에서 동작합니다.")
@@ -56,6 +63,7 @@ def run():
 
     board = Board(width=width, height=height, n_in_row=n)
     game = Game(board)
+    
 
     # 이미 제공된 model을 불러와서 학습된 policy_value_net을 얻는다.
     policy_param = pickle.load(open(model_file, 'rb'), encoding='bytes')
@@ -68,5 +76,7 @@ def run():
     game.start_play(human, mcts_player, start_player=order, is_shown=1)
 
 if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    ex = MyApp()
     run()
     sys.exit(app.exec_())
