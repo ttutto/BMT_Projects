@@ -19,16 +19,8 @@ class Human(object):
 
     def get_action(self, board):
         try:
-            time.sleep(3)
-            f = open("log.txt", 'r')
-            data = f.read()
-            print(data)
-            f.close()
-            data = data.split(',')
-            data = list(map(int, list(data)))
             print("돌을 둘 좌표를 입력하세요.")
             location = input()
-            location = data
             if isinstance(location, str) : location = [int(n, 10) for n in location.split(",")]
             move = board.location_to_move(location)
         except Exception as e : move = -1

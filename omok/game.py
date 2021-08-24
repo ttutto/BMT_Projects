@@ -177,6 +177,10 @@ class Game(object):
             print()
         if board.last_loc != -1 :
             print(f"마지막 돌의 위치 : ({board.last_loc[0]},{board.last_loc[1]})\n")
+            string = str(board.last_loc[0]) + " " + str(board.last_loc[1])
+            f = open("log.txt","w")
+            f.write(string)
+            f.close()
 
     def start_play(self, player1, player2, start_player=0, is_shown=1):
         self.board.init_board(start_player)
