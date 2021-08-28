@@ -13,6 +13,7 @@
   - 과정 생략 가능. (이미 생성된 모델이 저장되어 있음)
 - 실행(run)
   - 플레이어(사람)는 학습된 모델을 기반으로 하는 AI(인공지능)와 오목을 플레이할 수 있습니다.
+  - 상황에 따라 필요한 라이브러리는 설치해야 할 수 있습니다.
   - :star:**플레이 하는 방법**:star:
  
 ```
@@ -21,7 +22,7 @@ git clone https://github.com/NohGod/BMT_Projects
 cd BMT_Projects
 
 python run.py
-'''
+```
 
 
 ## 방법론
