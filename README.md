@@ -1,22 +1,22 @@
 # BMT_Projects
  
-[¾ËÆÄ°í(AlphaGo)](https://www.nature.com/articles/nature16961)¿Í [¾ËÆÄ°í Á¦·Î(AlphaGo Zero)](https://www.nature.com/articles/nature24270)ÀÇ ¹æ¹ý·ÐÀ» ¸ð¹æÇÏ¿© ¿À¸ñ ÀÎ°øÁö´É(AI)À» ±¸ÇöÇÏ´Â ÇÁ·ÎÁ§Æ®ÀÔ´Ï´Ù.
+[ì•ŒíŒŒê³ (AlphaGo)](https://www.nature.com/articles/nature16961)ì™€ [ì•ŒíŒŒê³  ì œë¡œ(AlphaGo Zero)](https://www.nature.com/articles/nature24270)ì˜ ë°©ë²•ë¡ ì„ ëª¨ë°©í•˜ì—¬ ì˜¤ëª© ì¸ê³µì§€ëŠ¥(AI)ì„ êµ¬í˜„í•˜ëŠ” í”„ë¡œì íŠ¸ìž…ë‹ˆë‹¤.
 
-¾Æ·¡ À¯»ç ÇÁ·ÎÁ§Æ®µéÀÇ ¼Ò½ºÄÚµå¸¦ Àû±Ø È°¿ëÇÏ¿´½À´Ï´Ù.
+ì•„ëž˜ ìœ ì‚¬ í”„ë¡œì íŠ¸ë“¤ì˜ ì†ŒìŠ¤ì½”ë“œë¥¼ ì ê·¹ í™œìš©í•˜ì˜€ìŠµë‹ˆë‹¤.
 - [An implementation of the AlphaZero algorithm for Gomoku](https://github.com/junxiaosong/AlphaZero_Gomoku)
-- [·»ÁÖ·ê ÆÇº°](https://blog.naver.com/dnpc7848/221506783416)
+- [ë Œì£¼ë£° íŒë³„](https://blog.naver.com/dnpc7848/221506783416)
 
-## ÇÁ·ÎÁ§Æ® ½ÇÇà °úÁ¤
-½ÇÇà °úÁ¤Àº ÇÐ½À(train)°ú ½ÇÇà(run) µÎ °úÁ¤À¸·Î ±¸ºÐµË´Ï´Ù.
-- ÇÐ½À(train)
-  - µö·¯´×(°­È­ÇÐ½À)À» È°¿ëÇÑ ÇÐ½ÀÀ» ¹Ýº¹ÇÏ¿© ¸ðµ¨(model)À» »ý¼ºÇÕ´Ï´Ù.
-  - °úÁ¤ »ý·« °¡´É. (ÀÌ¹Ì »ý¼ºµÈ ¸ðµ¨ÀÌ ÀúÀåµÇ¾î ÀÖÀ½)
-- ½ÇÇà(run)
-  - ÇÃ·¹ÀÌ¾î(»ç¶÷)´Â ÇÐ½ÀµÈ ¸ðµ¨À» ±â¹ÝÀ¸·Î ÇÏ´Â AI(ÀÎ°øÁö´É)¿Í ¿À¸ñÀ» ÇÃ·¹ÀÌÇÒ ¼ö ÀÖ½À´Ï´Ù.
-  - »óÈ²¿¡ µû¶ó ÇÊ¿äÇÑ ¶óÀÌºê·¯¸®´Â ¼³Ä¡ÇØ¾ß ÇÒ ¼ö ÀÖ½À´Ï´Ù.
+## í”„ë¡œì íŠ¸ ì‹¤í–‰ ê³¼ì •
+ì‹¤í–‰ ê³¼ì •ì€ í•™ìŠµ(train)ê³¼ ì‹¤í–‰(run) ë‘ ê³¼ì •ìœ¼ë¡œ êµ¬ë¶„ë©ë‹ˆë‹¤.
+- í•™ìŠµ(train)
+  - ë”¥ëŸ¬ë‹(ê°•í™”í•™ìŠµ)ì„ í™œìš©í•œ í•™ìŠµì„ ë°˜ë³µí•˜ì—¬ ëª¨ë¸(model)ì„ ìƒì„±í•©ë‹ˆë‹¤.
+  - ê³¼ì • ìƒëžµ ê°€ëŠ¥. (ì´ë¯¸ ìƒì„±ëœ ëª¨ë¸ì´ ì €ìž¥ë˜ì–´ ìžˆìŒ)
+- ì‹¤í–‰(run)
+  - í”Œë ˆì´ì–´(ì‚¬ëžŒ)ëŠ” í•™ìŠµëœ ëª¨ë¸ì„ ê¸°ë°˜ìœ¼ë¡œ í•˜ëŠ” AI(ì¸ê³µì§€ëŠ¥)ì™€ ì˜¤ëª©ì„ í”Œë ˆì´í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
+  - ìƒí™©ì— ë”°ë¼ í•„ìš”í•œ ë¼ì´ë¸ŒëŸ¬ë¦¬ëŠ” ì„¤ì¹˜í•´ì•¼ í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-## ÇÃ·¹ÀÌ ÇÏ´Â ¹æ¹ý
- 
+## í”Œë ˆì´ í•˜ëŠ” ë°©ë²•
+ Anaconda prompt 1
 ```
 git clone https://github.com/NohGod/BMT_Projects
 
@@ -24,31 +24,41 @@ cd BMT_Projects
 
 python run.py
 ```
+Anaconda  prompt 2
+```
+pip install opencv-contrib-python
+pip install Mediapipe
+pip install autopy
+
+cd BMT_Projects
+
+python mouse.py
+```
 
 
-## ¹æ¹ý·Ð
-»ç¿ëÇÑ ÁÖ¿ä ¹æ¹ý·ÐÀº ´ÙÀ½°ú °°ÀÌ 3°¡ÁöÀÔ´Ï´Ù.
-- Á¤Ã¥¸Á(Policy Network)
-  - ¾ËÆÄ°í(AlphaGo)¿¡¼­ »ç¿ëµÈ ¹æ¹ý·ÐÀ¸·Î, ÇöÀç ¿À¸ñÆÇÀÇ »óÅÂ(state)¸¦ ÀÔ·Â¹Þ¾Æ °¢ À§Ä¡¿¡ ´ëÇÑ ±â´ñ°ªÀ» °è»êÇÕ´Ï´Ù.
-  - ±â´ñ°ªÀÌ Å©´Ù´Â °ÍÀº ÀÚ½Å ¶Ç´Â »ó´ë°¡ Âø¼öÇÏ±â ÁÁÀº À§Ä¡¸¦ ÀÇ¹ÌÇÕ´Ï´Ù.
-- ÀÚ°¡ ´ë±¹(self-play)À» ÅëÇÑ ÇÐ½À
-  - ¾ËÆÄ°í Á¦·Î(AlphaGo Zero)¿¡¼­ »ç¿ëµÈ ¹æ¹ý·ÐÀ¸·Î, ÀÚ°¡ ´ë±¹À» ÅëÇØ¼­ »ý¼ºÇÑ ÇÃ·¹ÀÌ µ¥ÀÌÅÍ¸¸À» »ç¿ëÇÏ¿© Á¤Ã¥¸ÁÀ» ÇÐ½ÀÇÕ´Ï´Ù.
-  - ÀÎ°£ÀÇ ÇÃ·¹ÀÌ µ¥ÀÌÅÍ¸¦ ÀüÇô »ç¿ëÇÏÁö ¾Ê¾ÒÀ½¿¡µµ, ¾ËÆÄ°í Á¦·Î´Â ¾ËÆÄ°íº¸´Ù ¶Ù¾î³­ ¼º´ÉÀ» º¸¿©ÁÖ¾ú½À´Ï´Ù.
-- MCTS(Monte Carlo Tree Search : ¸óÅ×Ä«¸¦·Î Æ®¸® Å½»ö) ¾Ë°í¸®Áò
-  - ¾ËÆÄ°í¿Í ¾ËÆÄ°í Á¦·Î¿¡¼­ »ç¿ëµÈ ¹æ¹ý·ÐÀ¸·Î, ´Ù¾çÇÑ °æ¿ìÀÇ ¼ö¸¦ Å½»öÇÏ¿© ÃÖÁ¾ÀûÀ¸·Î Âø¼ö À§Ä¡¸¦ °áÁ¤ÇÕ´Ï´Ù.
+## ë°©ë²•ë¡ 
+ì‚¬ìš©í•œ ì£¼ìš” ë°©ë²•ë¡ ì€ ë‹¤ìŒê³¼ ê°™ì´ 3ê°€ì§€ìž…ë‹ˆë‹¤.
+- ì •ì±…ë§(Policy Network)
+  - ì•ŒíŒŒê³ (AlphaGo)ì—ì„œ ì‚¬ìš©ëœ ë°©ë²•ë¡ ìœ¼ë¡œ, í˜„ìž¬ ì˜¤ëª©íŒì˜ ìƒíƒœ(state)ë¥¼ ìž…ë ¥ë°›ì•„ ê° ìœ„ì¹˜ì— ëŒ€í•œ ê¸°ëŒ“ê°’ì„ ê³„ì‚°í•©ë‹ˆë‹¤.
+  - ê¸°ëŒ“ê°’ì´ í¬ë‹¤ëŠ” ê²ƒì€ ìžì‹  ë˜ëŠ” ìƒëŒ€ê°€ ì°©ìˆ˜í•˜ê¸° ì¢‹ì€ ìœ„ì¹˜ë¥¼ ì˜ë¯¸í•©ë‹ˆë‹¤.
+- ìžê°€ ëŒ€êµ­(self-play)ì„ í†µí•œ í•™ìŠµ
+  - ì•ŒíŒŒê³  ì œë¡œ(AlphaGo Zero)ì—ì„œ ì‚¬ìš©ëœ ë°©ë²•ë¡ ìœ¼ë¡œ, ìžê°€ ëŒ€êµ­ì„ í†µí•´ì„œ ìƒì„±í•œ í”Œë ˆì´ ë°ì´í„°ë§Œì„ ì‚¬ìš©í•˜ì—¬ ì •ì±…ë§ì„ í•™ìŠµí•©ë‹ˆë‹¤.
+  - ì¸ê°„ì˜ í”Œë ˆì´ ë°ì´í„°ë¥¼ ì „í˜€ ì‚¬ìš©í•˜ì§€ ì•Šì•˜ìŒì—ë„, ì•ŒíŒŒê³  ì œë¡œëŠ” ì•ŒíŒŒê³ ë³´ë‹¤ ë›°ì–´ë‚œ ì„±ëŠ¥ì„ ë³´ì—¬ì£¼ì—ˆìŠµë‹ˆë‹¤.
+- MCTS(Monte Carlo Tree Search : ëª¬í…Œì¹´ë¥¼ë¡œ íŠ¸ë¦¬ íƒìƒ‰) ì•Œê³ ë¦¬ì¦˜
+  - ì•ŒíŒŒê³ ì™€ ì•ŒíŒŒê³  ì œë¡œì—ì„œ ì‚¬ìš©ëœ ë°©ë²•ë¡ ìœ¼ë¡œ, ë‹¤ì–‘í•œ ê²½ìš°ì˜ ìˆ˜ë¥¼ íƒìƒ‰í•˜ì—¬ ìµœì¢…ì ìœ¼ë¡œ ì°©ìˆ˜ ìœ„ì¹˜ë¥¼ ê²°ì •í•©ë‹ˆë‹¤.
 
 
-## Âü°í ÀÚ·á
-ÀüÃ¼ÀûÀÎ ¹è°æÀ» ÆÄ¾ÇÇÏ´Âµ¥ À¯¿ëÇÕ´Ï´Ù.
-- [¾ËÆÄ°í - ³ª¹«À§Å°](https://namu.wiki/w/%EC%95%8C%ED%8C%8C%EA%B3%A0)
-- [¿À¸ñ(·»ÁÖ·ê) - ³ª¹«À§Å°](https://namu.wiki/w/%EC%98%A4%EB%AA%A9?from=%EC%98%A4%EB%AA%A9%28%EA%B2%8C%EC%9E%84%29#s-2.3)
+## ì°¸ê³  ìžë£Œ
+ì „ì²´ì ì¸ ë°°ê²½ì„ íŒŒì•…í•˜ëŠ”ë° ìœ ìš©í•©ë‹ˆë‹¤.
+- [ì•ŒíŒŒê³  - ë‚˜ë¬´ìœ„í‚¤](https://namu.wiki/w/%EC%95%8C%ED%8C%8C%EA%B3%A0)
+- [ì˜¤ëª©(ë Œì£¼ë£°) - ë‚˜ë¬´ìœ„í‚¤](https://namu.wiki/w/%EC%98%A4%EB%AA%A9?from=%EC%98%A4%EB%AA%A9%28%EA%B2%8C%EC%9E%84%29#s-2.3)
 
-ÀÌ·ÐÀûÀ¸·Î Âü°íÇÑ ÀÚ·áµéÀÔ´Ï´Ù.
-- [°­È­ÇÐ½ÀÀÇ °³³ä](https://jeinalog.tistory.com/20)
-- [DQN°ú Policy GradientÀÇ Â÷ÀÌ](https://gist.github.com/ByungSunBae/56009ed6ea31bb91a236e67bcb3245a2)
-- [DQN°ú Policy GradientÀÇ Â÷ÀÌ(2)](https://dnddnjs.gitbooks.io/rl/content/numerical_methods.html)
-- [Minimax ¾Ë°í¸®Áò°ú MCTS ¾Ë°í¸®Áò](https://shuuki4.wordpress.com/2016/03/11/alphago-alphago-pipeline-%ED%97%A4%EC%A7%91%EA%B8%B0/)
-- [¾ËÆÄ°í ³í¹® ¹ø¿ª](https://blog.naver.com/sogangori/220668124217)
-- [¾ËÆÄ°í¿¡ Àû¿ëµÈ µö·¯´× ¾Ë°í¸®Áò ºÐ¼®](https://brunch.co.kr/@justinleeanac/2)
-- [¾ËÆÄ°í Á¦·Î ºÐ¼®(MCTS)](https://leekh7411.tistory.com/1?category=768501)
-- [¾ËÆÄ°í Á¦·Î¿Í ¾ËÆÄÁ¦·Î¿¡ ´ëÇÑ ºÐ¼®](https://jsideas.net/AlphaZero/)
+ì´ë¡ ì ìœ¼ë¡œ ì°¸ê³ í•œ ìžë£Œë“¤ìž…ë‹ˆë‹¤.
+- [ê°•í™”í•™ìŠµì˜ ê°œë…](https://jeinalog.tistory.com/20)
+- [DQNê³¼ Policy Gradientì˜ ì°¨ì´](https://gist.github.com/ByungSunBae/56009ed6ea31bb91a236e67bcb3245a2)
+- [DQNê³¼ Policy Gradientì˜ ì°¨ì´(2)](https://dnddnjs.gitbooks.io/rl/content/numerical_methods.html)
+- [Minimax ì•Œê³ ë¦¬ì¦˜ê³¼ MCTS ì•Œê³ ë¦¬ì¦˜](https://shuuki4.wordpress.com/2016/03/11/alphago-alphago-pipeline-%ED%97%A4%EC%A7%91%EA%B8%B0/)
+- [ì•ŒíŒŒê³  ë…¼ë¬¸ ë²ˆì—­](https://blog.naver.com/sogangori/220668124217)
+- [ì•ŒíŒŒê³ ì— ì ìš©ëœ ë”¥ëŸ¬ë‹ ì•Œê³ ë¦¬ì¦˜ ë¶„ì„](https://brunch.co.kr/@justinleeanac/2)
+- [ì•ŒíŒŒê³  ì œë¡œ ë¶„ì„(MCTS)](https://leekh7411.tistory.com/1?category=768501)
+- [ì•ŒíŒŒê³  ì œë¡œì™€ ì•ŒíŒŒì œë¡œì— ëŒ€í•œ ë¶„ì„](https://jsideas.net/AlphaZero/)
